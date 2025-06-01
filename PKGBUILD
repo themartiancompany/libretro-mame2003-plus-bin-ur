@@ -151,8 +151,8 @@ package() {
     "${pkgdir}${_dest_dir}"
   install \
     -Dm644 \
-    "${srcdir}/${_lib}" \
-    "${pkgdir}/${_dest_dir}/${_lib}"
+    "${srcdir}/${_lib}.so" \
+    "${pkgdir}/${_dest_dir}/${_lib}.so"
 }
 
 # vim: ft=sh syn=sh et
