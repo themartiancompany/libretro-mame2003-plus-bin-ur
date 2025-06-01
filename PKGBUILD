@@ -101,7 +101,7 @@ conflicts=(
 )
 source=()
 sha256sums=()
-_lib="mame2003_plus_libretro_android.so"
+_lib="mame2003_plus_libretro_android"
 # This file has been published onto Ethereum Holesky testnet.
 # That network may disappear sooner or later, so you'll have to crowd-publish it
 # onto mainnets download after download on the mainnets when crowd-publishing
@@ -120,9 +120,9 @@ _url="${_http}/${_ns}/${pkgname}"
 _commit="b78946661c419a1fefe927cacc5619dccec4ace0"
 _evmfs_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_lib_sum}"
 if [[ "${_evmfs}" == "true" ]]; then
-  _lib_src="${_lib}.tar.xz::${_evmfs_uri}"
+  _lib_src="${_lib}.arm.so.tar.xz::${_evmfs_uri}"
 elif [[ "${_evmfs}" == "false" ]]; then
-  _lib_src="${_lib}.tar.xz::${_url}/raw/${_commit}/${_lib}.arm.tar.xz"
+  _lib_src="${_lib}.arm.so.tar.xz::${_url}/raw/${_commit}/${_lib}.arm.so.tar.xz"
 fi
 source+=(
   "${_lib_src}"
