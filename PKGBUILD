@@ -106,10 +106,14 @@ _lib="mame2003_plus_libretro_android.so"
 # That network may disappear sooner or later, so you'll have to crowd-publish it
 # onto mainnets download after download on the mainnets when crowd-publishing
 # will be ready.
-_evmfs_network="17000"
+_evmfs_network="7001"
 _evmfs_address="0x151920938488F193735e83e052368cD41F9d9362"
+# The kid
 _evmfs_ns="0x926acb6aA4790ff678848A9F1C59E578B148C786"
+# Truocolo
+_evmfs_sig_ns="0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b"
 _lib_sum="b5c7f02c4bd973597310afc3e5d95bd369a3c7b9ea7736093ac6ff830443be08"
+_lib_sig_sum="f9f3ef1c8cadef0836375cceb5586f31babd4c27cf0bc3a6947a12905a1eacd6"
 _http="https://github.com"
 _ns="6xrS42VaMBgMbWRPAiVP"
 _url="${_http}/${_ns}/${pkgname}"
