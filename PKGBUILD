@@ -36,10 +36,12 @@ _evmfs_available="$( \
     -v \
     "evmfs" || \
     true)"
-if [[ "${_evmfs_available}" != "" ]]; then
-  _evmfs="true"
-elif [[ "${_evmfs_available}" == "" ]]; then
-  _evmfs="false"
+if [[ ! -v "_evmfs" ]]; then
+  if [[ "${_evmfs_available}" != "" ]]; then
+    _evmfs="true"
+  elif [[ "${_evmfs_available}" == "" ]]; then
+    _evmfs="false"
+  fi
 fi
 _pkg="mame2003-plus"
 _pkgname="libretro-${_pkg}"

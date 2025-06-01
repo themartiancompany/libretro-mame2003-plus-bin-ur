@@ -19,7 +19,7 @@
 [comment]: <> (License along with this program.)
 [comment]: <> (If not, see <https://www.gnu.org/licenses/>.)
 
-# `libretro-mame2003-bin`
+# `libretro-mame2003-plus-bin`
 
 universal recipe for
 [user repo](
