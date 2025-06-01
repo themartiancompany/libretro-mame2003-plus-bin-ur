@@ -41,15 +41,16 @@ if [[ "${_evmfs_available}" != "" ]]; then
 elif [[ "${_evmfs_available}" == "" ]]; then
   _evmfs="false"
 fi
-_pkg="mame2010"
+_pkg="mame2003-plus"
 _pkgname="libretro-${_pkg}"
-_Pkg="MAME2010"
+_Pkg="MAME2003-plus"
 pkgname="${_pkgname}-bin"
 pkgver="0.139"
 pkgrel=1
 _pkgdesc=(
   "RetroArch backend for"
-  "the 2010 version of MAME"
+  "the '2003 Plus'"
+  "version of MAME"
   "multi-purpose"
   "emulation framework."
 )
@@ -98,7 +99,7 @@ conflicts=(
 )
 source=()
 sha256sums=()
-_lib="${_pkg}_libretro_android.so"
+_lib="mame2003_plus_libretro_android.so"
 # This file has been published onto Ethereum Holesky testnet.
 # That network may disappear sooner or later, so you'll have to crowd-publish it
 # onto mainnets download after download on the mainnets when crowd-publishing
@@ -106,7 +107,7 @@ _lib="${_pkg}_libretro_android.so"
 _evmfs_network="17000"
 _evmfs_address="0x151920938488F193735e83e052368cD41F9d9362"
 _evmfs_ns="0x926acb6aA4790ff678848A9F1C59E578B148C786"
-_lib_sum="7b982bff20e4238b1e9de219dd57befb6f392cd0633caf2ddfebccd05b3183c2"
+_lib_sum="b5c7f02c4bd973597310afc3e5d95bd369a3c7b9ea7736093ac6ff830443be08"
 _http="https://github.com"
 _ns="6xrS42VaMBgMbWRPAiVP"
 _url="${_http}/${_ns}/${pkgname}"
@@ -125,11 +126,13 @@ sha256sums+=(
 )
 
 validgpgkeys=(
-  # Truocolo <truocolo@aol.com>
+  # Truocolo
+  #   <truocolo@aol.com>
   '97E989E6CF1D2C7F7A41FF9F95684DBE23D6A3E9'
-  # Truocolo <truocolo@0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b>
+  #   <truocolo@0x6E5163fC4BFc1511Dbe06bB605cc14a3e462332b>
   'F690CBC17BD1F53557290AF51FC17D540D0ADEED'
-  # Pellegrino Prevete (dvorak) <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
+  # Pellegrino Prevete (dvorak)
+  #   <dvorak@0x87003Bd6C074C713783df04f36517451fF34CBEf>
   '12D8E3D7888F741E89F86EE0FEC8567A644F1D16'
 )
 
