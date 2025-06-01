@@ -113,7 +113,7 @@ _lib_sum="b5c7f02c4bd973597310afc3e5d95bd369a3c7b9ea7736093ac6ff830443be08"
 _http="https://github.com"
 _ns="6xrS42VaMBgMbWRPAiVP"
 _url="${_http}/${_ns}/${pkgname}"
-_commit="a9b2e2277c600e75913d2fed99bf93bcfd153a23"
+_commit="b78946661c419a1fefe927cacc5619dccec4ace0"
 _evmfs_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_lib_sum}"
 if [[ "${_evmfs}" == "true" ]]; then
   _lib_src="${_lib}.tar.xz::${_evmfs_uri}"
